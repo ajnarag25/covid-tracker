@@ -1,0 +1,32 @@
+body {
+  	font-family: 'Open Sans', sans-serif;
+  	color: white;
+  	background-color: #212529;
+	}
+hr{
+	width: 100%;
+}
+.active{
+	border: 1px solid white;
+	background-color: #20B2AA;
+}
+.death{
+	border: 1px solid white;
+	background-color: #DC143C;
+}
+.recover{
+	border: 1px solid white;
+	background-color: #228B22;
+}
+
+.detail{
+	border: 1px solid white;
+	padding: 15px;
+}
+
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+

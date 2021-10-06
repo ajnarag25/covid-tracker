@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Covid Tracker</title>
+  <link rel="icon" type="image/png" href="images/virus.jpg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" integrity="sha512-O03ntXoVqaGUTAeAmvQ2YSzkCvclZEcPQu1eqloPaHfJ5RuNGiS4l+3duaidD801P50J28EHyonCV06CUlTSag==" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="css/styleapi.css">
+  <link rel="stylesheet" href="css/modalcss.css" >
+  <link rel="stylesheet" type="text/css" href="css/modal2css.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button><img src="images/virus.png" width="50px">
+     <div class="navbar-brand"  style="color: #00BFFF;" href="#">Covid Tracker
+      </div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#" id="myBtn">About</a></li>
+        <li><a href="#" id="myContact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container text-center">    
+  <div class="row">
+  	<h3 style="font-size: 50px; color: #00BFFF;" class="about">Global Covid Cases</h3>
+ </div><br>
+ <div class="col-sm-4">
+ 	<div class="active">
+ 		<h3>Active</h3>
+ 	</div>
+ 	<div class="detail">
+ 		<h3 id="active-cases-global"></h3>
+ 	</div>
+ </div>
+  <div class="col-sm-4">
+ 	<div class="death">
+ 		<h3>Death</h3>
+ 	</div>
+ 	<div class="detail">
+ 		<h3 id="death-cases-global"></h3>
+ 	</div>
+ </div>
+  <div class="col-sm-4">
+ 	<div class="recover">
+ 		<h3>Recovery</h3>
+ 	</div>
+ 	<div class="detail">
+ 		<h3 id="recover-cases-global"></h3>
+ 	</div><br><br>
+ </div>
+ <hr>
+
+  <div class="row">
+  	<h5 id ="select-country" style="font-size: 50px; color: #00BFFF;" class="about"><img src="https://www.countryflags.io/PH/flat/64.png"></h5>
+  	<h4>Select a country <select id="selection" class="select" style="color:black; width: 50%; ">
+    </select></h4>
+ </div><br><br>
+ <div class="col-sm-4">
+ 	<div class="active">
+ 		<h3>Active</h3>
+ 	</div>
+ 	<div class="detail">
+ 		<h3 id="active-cases"></h3>
+ 	</div>
+ </div>
+  <div class="col-sm-4">
+ 	<div class="death">
+ 		<h3>Death</h3>
+ 	</div>
+ 	<div class="detail">
+ 		<h3 id="death-cases"></h3>
+ 	</div>
+ </div>
+  <div class="col-sm-4">
+ 	<div class="recover">
+ 		<h3>Recovery</h3>
+ 	</div>
+ 	<div class="detail">
+ 		<h3 id="recover-cases"></h3>
+ 	</div><br><br><br>
+
+ </div>
+   <h3>If you want to view the website for the WHO (World Health Organization) to keep you updated.</h3><a href="https://covid19.who.int/">https://covid19.who.int/</a><br><br><br>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>This Website is for Data-Visualization Only for Covid Cases all around the World.</p>
+</footer>
+
+
+<div id="myModal" class="modal">
+<!-- Modal content -->
+<div class="modal-content" style="color: black">
+  <span class="close" style="text-align: left;">&times;</span>
+    <label>About</label>
+    <hr>
+    <p class="font">Welcome to this website.<br><br>The Purpose of this website is to give Updated Results regarding  Covid Cases All Around the World.</p><br>I based my API project from this link!<br> 
+    <a href="https://api.covid19api.com/summary">https://api.covid19api.com/summary</a>
+    <br><br>
+    <p style="font-style: italic;">“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” – Martin Fowler</p>
+    </div>
+</div>
+
+<div id="myModal2" class="modal2">
+  <!-- Modal content -->
+    <div class="modal-content2" style="color: black">
+      <span class="close2">&times;</span>
+      <h1 style="text-align: center">Contact Me</h1>
+      <div class="card">
+        <img src="images/me.png" alt="John" style="width:20%">
+          <h1>Aj Narag</h1>
+        <p class="title">Estudyante</p>
+    <div style="margin: 24px 0;">
+      <a href="https://github.com/ajnarag25"><i class="fa fa-github"></i></a> 
+      <a href="https://discord.com/channels/@me"><i class="iconify" data-icon="simple-icons:discord"></i></a>    
+    <p>Message me in messenger if you want</p>
+    <p>Discord Name: eyyjayy#4950</p>
+
+  </div>
+</div>
+</div>
+
+
+<script type="text/javascript" src="javascripts/javscript.js"></script>
+<script type="text/javascript" src="javascripts/modal.js"></script>
+<script type="text/javascript" src="javascripts/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous"></script>
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+
+</body>
+
+
+</html>
